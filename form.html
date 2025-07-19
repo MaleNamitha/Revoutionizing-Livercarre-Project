@@ -133,9 +133,9 @@
   </header>
 
   <nav>
-  <a href="{{ url_for('home') }}">Home</a>
-  <a href="{{ url_for('form') }}">Prediction Form</a>
-  <a href="{{ url_for('portfolio') }}">Portfolio</a>
+  <a href="home.html">Home</a>
+  <a href="form.html">Prediction Form</a>
+  <a href="portfolio.html">Portfolio</a>
 </nav>
 
   <div class="container">
@@ -169,12 +169,12 @@
 
       <input type="submit" value="Predict" />
 
-     {% if prediction %}
+    
   <div style="margin-top: 20px; background: #e6ffe6; padding: 10px; border: 1px solid #66cc66;">
     <h3>Prediction Result for {{ name }}:</h3>
     <p><strong>{{ prediction }}</strong></p>
   </div>
-{% endif %}
+
     </form>
   </div>
 </body>
