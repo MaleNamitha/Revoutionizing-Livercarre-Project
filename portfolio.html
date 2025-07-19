@@ -49,11 +49,11 @@
 </head>
 <body><header>
   <h1>LiverCare Portfolio</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="form.html">Prediction Form</a>
-    <a href="portfolio.html">Portfolio</a>
-  </nav>
+ <nav>
+  <a href="{{ url_for('home') }}">Home</a>
+  <a href="{{ url_for('form') }}">Prediction Form</a>
+  <a href="{{ url_for('portfolio') }}">Portfolio</a>
+</nav>
 </header><div class="container">
   <div class="card">
     <h3>AI-Powered Diagnosis</h3>
