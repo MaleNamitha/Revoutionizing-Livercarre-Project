@@ -169,10 +169,11 @@
 
       <input type="submit" value="Predict" />
 
-      {% if prediction %}
-  <h3 style="margin-top: 20px; color: green;">
-    🩺 Prediction Result for {{ patient_name }}: {{ prediction }}
-  </h3>
+     {% if prediction %}
+  <div style="margin-top: 20px; background: #e6ffe6; padding: 10px; border: 1px solid #66cc66;">
+    <h3>Prediction Result for {{ name }}:</h3>
+    <p><strong>{{ prediction }}</strong></p>
+  </div>
 {% endif %}
     </form>
   </div>
